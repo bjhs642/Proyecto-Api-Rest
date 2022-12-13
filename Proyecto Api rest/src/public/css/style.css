@@ -1,0 +1,39 @@
+.imglogo{
+    max-width: 50%;
+}
+.navbar-brand{
+    max-width: 15%;
+}
+.border-bottom{
+    border-bottom: 3px solid #d6d5d5 !important;
+}
+#menuNavbar{
+    width: 100%;
+}
+.imgslider{
+    max-width: 60%;
+}
+.sh__item{
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+}
+.mx-auto{
+    text-align: center;
+}
+
+.sheetSlider{
+    background-color: #ffffff;
+    text-align: center;
+}
+.sh__meta span, .sh__meta h4{
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+
+@media (mid-width:768px){
+    .imglogo{
+        max-width: 30%;
+    }
+}

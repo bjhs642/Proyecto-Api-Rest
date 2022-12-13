@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card-header">
+                <h3>signup</h3>
+            </div>
+            <img src="images/logo-google.png" class="mx-auto w-25">
+            <div class="card body">
+                {{#if errors}}
+                {{#each errors}}
+                <p class="alert alert-danger">{{ this.msg}}</p>
+                {{/each}}
+                {{/if}}
+                <form action="/signup" method="POST">
+                    <div class="form-group">
+                        <input type="type" name="first_name" placeholder="First Name" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="type" name="last_name" placeholder="Last Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="type" name="Username" placeholder="User Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="type" name="Username" placeholder="User Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="type" name="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                        <button class="btn btn-success btn-block">
+                            SingIn
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
